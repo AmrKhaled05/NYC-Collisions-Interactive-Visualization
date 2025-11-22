@@ -41,15 +41,9 @@ bash
 # Delete pip cache
 rm -rf ~/.cache/pip
 
-# Delete git history (saves ~100MB+, but disables git pull)
-rm -rf .git
-
 # Delete local share cache
 rm -rf ~/.local/share
 
-
-### C. Create Virtual Environment
-bash
 # Create environment using Python 3.10
 mkvirtualenv --python=/usr/bin/python3.10 myenv
 
