@@ -6,14 +6,14 @@ import plotly.graph_objects as go
 import numpy as np
 import re
 
-
 # ---------------------------------------------------------
 # 1. DATA LOADING (Parquet Only)
 # ---------------------------------------------------------
 def load_data():
+    file_path = 'Sample.parquet'
     try:
         # Load pre-optimized Parquet file
-        df = pd.read_parquet('Final_Data.parquet', engine='pyarrow')
+        df = pd.read_parquet(file_path, engine='pyarrow')
         print(f"✅ Data loaded successfully: {len(df)} rows")
         return df
     except Exception as e:
